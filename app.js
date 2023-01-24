@@ -115,7 +115,7 @@ app.delete("/deletecourse/:id", (req,res) => {
     if(req.params.id > 0 && req.params.id <= golfcourses.allgolfcourses.length){
         golfcourses.allgolfcourses.splice(req.params.id - 1, 1)
         setNewId()
-        return res.send()
+        return res.send("One Course has been deleted!")
     }else{
         return res.status(404).send("Id not found!")
     }
