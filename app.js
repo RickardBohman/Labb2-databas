@@ -2,6 +2,7 @@
 const express = require("express")
 const app = express()
 const PORT = process.env.PORT || 3000
+app.use(express.static("public"))
 
 const bodyParser = require("body-parser")
 app.use(bodyParser.urlencoded({extended:true}))
@@ -61,6 +62,7 @@ const golfcourses = {allgolfcourses: [
     {id: 49 ,coursename: "Punta Espada G.C" , country: "Dominican Republic", city: "Cap Cana", distance: 6762, par: 72 },
     {id: 50 ,coursename: "Diamante D.C. (Dunes)" , country: "Mexico", city: "Cabo San Lucas", distance: 6547, par: 72 }
 ]}
+
 
 
 
