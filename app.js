@@ -67,7 +67,7 @@ const golfcourses = {allgolfcourses: [
 
 
 app.get("/", (req,res) => {
-    res.sendFile(__dirname + "/index.html")
+    res.sendFile(__dirname + "/public/index.html")
 })
 
 app.get("/courses", (req,res) => {
@@ -85,7 +85,7 @@ app.get("/course/:id",(req,res)=> {
 })
 
 app.get("/addNewGolfCourse", (req,res)=> {
-    res.sendFile(__dirname + "/addGolfCourse.html")
+    res.sendFile(__dirname + "/public/addGolfCourse.html")
     
 })
 
