@@ -3,4 +3,39 @@
 
 body{
     text-align: center;
+    background-image: url("images/PanoramaGolfResort.jpg");
+    background-size: cover;
+}
+
+h1{
+    color: #395144;
+}
+
+h3{
+    color: #395144;
+    
+}
+
+p{
+    color: #395144;
+}
+
+li{
+    color: #395144;
+    font-size: large;
+    list-style-type:none;
+    padding: 5px;
+}
+
+.grad1 {
+    opacity: .8;
+    background: #F0EBCE;
+}
+
+form{
+    padding: 10px;
+}
+
+input{
+    margin: 10px;
 }

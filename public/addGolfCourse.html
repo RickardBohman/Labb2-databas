@@ -6,15 +6,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Add a new Golf course here!</h1>
+    <div class="grad1">
+        <h1>Add a new Golf course here!</h1>
+    
+        <form action="/addNewGolfCourse" method="post">
+            <input type="text" name="CourseName" placeholder="Enter CourseName Here!">
+            <input type="text" name="Country" placeholder="Enter Contry Here!">
+            <input type="text" name="City" placeholder="Enter City Here!">
+            <input type="text" name="Distance" placeholder="Enter Distance Here!  (meters)">
+            <input type="text" name="Par" placeholder="Enter Par Here!">
+            <button type="submit">Submit</button>
+        </form>
 
-    <form action="/addNewGolfCourse" method="post">
-        <input type="text" name="CourseName" placeholder="Enter CourseName Here!">
-        <input type="text" name="Country" placeholder="Enter Contry Here!">
-        <input type="text" name="City" placeholder="Enter City Here!">
-        <input type="text" name="Distance" placeholder="Enter Distance Here!  (meters)">
-        <input type="text" name="Par" placeholder="Enter Par Here!">
-        <button type="submit">Submit</button>
-    </form>
+    </div>
 </body>
 </html>
